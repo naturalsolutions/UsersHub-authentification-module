@@ -245,6 +245,8 @@ Les routes suivantes sont implémentés dans `UsersHub-authentification-module`:
 | `/logout`           | Déconnecte l'utilisateur courant                                                                                                               | NA                         | redirect                         |
 | `/authorize`        | Connecte un utilisateur à l'aide des infos retournées par le fournisseurs d'identités (Si redirection vers un portail de connexion par /login) | {data}                     | redirect                         |
 
+En cas d'erreur d'autorisation, la route `/authorize` redirige vers la page de login avec un paramètre `login_error` (message destiné au frontend).
+
 
 ### Méthodes définies dans le module
 
